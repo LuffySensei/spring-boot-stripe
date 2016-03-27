@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="com.stripe:stripe-java:1.47.0" type="repository">
+    <properties maven-id="com.stripe:stripe-java:1.47.0" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/stripe-java-1.47.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/gson-2.2.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/stripe-java-1.47.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
