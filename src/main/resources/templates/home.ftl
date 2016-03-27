@@ -9,7 +9,7 @@
     <form action="" method="POST">
         <script
                 src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                data-key="pk_test_pJxlsEsh740gghbvkPnJ2wjq"
+                data-key="Your_Data_Key"
                 data-amount="2000"
                 data-name="Demo Pay with Stripe"
                 data-description="2 widgets ($20.00)"

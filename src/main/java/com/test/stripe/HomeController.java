@@ -22,7 +22,7 @@ public class HomeController {
     @RequestMapping(value = { "/"}, method = RequestMethod.POST)
     public String callback( HttpServletRequest request) {
         System.out.println("callback");
-        Stripe.apiKey = "sk_test_YbH9ar0mLGGWQ6ZBHEWwjB9V";
+        Stripe.apiKey = "Your_API_Key";
 
         String token = request.getParameter("stripeToken");
 
