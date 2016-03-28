@@ -20,7 +20,7 @@ public class HomeController {
     }
 
     @RequestMapping(value = { "/"}, method = RequestMethod.POST)
-    public String callback( HttpServletRequest request) {
+    public String callback( Map<String, String> model, HttpServletRequest request) {
         System.out.println("callback");
         Stripe.apiKey = "Your_API_Key";
 
@@ -34,9 +34,11 @@ public class HomeController {
             chargeParams.put("description", "Example charge");
 
             Charge charge = Charge.create(chargeParams);
-            System.out.println(charge);
+            //System.out.println(charge);
+            model.put("message", "Successful transaction");
         } catch (Exception e) {
-            // The card has been declined
+            model.put("message", "The card has been declined");
+
         }
         return "home";
     }

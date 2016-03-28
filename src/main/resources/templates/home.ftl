@@ -6,6 +6,10 @@
 </head>
 <body>
     <h1>Test Stripe Payment</h1>
+    <#if message??>
+    ${message}
+    <#else>
+    Amount to pay: 20.00$
     <form action="" method="POST">
         <script
                 src="https://checkout.stripe.com/checkout.js" class="stripe-button"
@@ -17,5 +21,7 @@
                 data-locale="auto">
         </script>
     </form>
+    </#if>
+
 </body>
 </html>
